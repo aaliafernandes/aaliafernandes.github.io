@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aalia Fernandes | Portfolio & Journey</title>
+    <title>Aalia Fernandes | Portfolio & Career Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -63,7 +63,7 @@
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 1.8rem;
             list-style: none;
         }
 
@@ -71,7 +71,7 @@
             text-decoration: none;
             color: var(--text-main);
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: color 0.3s;
         }
 
@@ -142,6 +142,8 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
         }
 
         .btn-primary {
@@ -158,6 +160,7 @@
         .btn-outline {
             border: 2px solid #CBD5E1;
             color: var(--primary);
+            background: transparent;
         }
 
         .btn-outline:hover {
@@ -272,6 +275,22 @@
             margin-bottom: 1rem;
         }
 
+        /* Code & Document Container */
+        .doc-box {
+            background: #F8FAFC;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+            max-height: 320px;
+            overflow-y: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.88rem;
+            color: #1E293B;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
         /* Footer */
         footer {
             background: var(--primary);
@@ -317,8 +336,9 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#leadership">Leadership & Service</a></li>
-            <li><a href="#interests">Interests & Hobbies</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#cover-letter">Cover Letter</a></li>
+            <li><a href="#outreach">Networking</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -326,12 +346,12 @@
     <!-- Hero Header -->
     <header>
         <div class="hero-content">
-            <span class="badge">Purdue University • Senior</span>
+            <span class="badge">Purdue University • Senior (Graduating May 2027)</span>
             <h1>Bridging <span>Data Analytics</span> & Financial Capital</h1>
-            <p class="hero-subtitle">BS in Business Analytics & Information Management with a Finance Minor. Passionate about predictive modeling, data visualization, and turning complex business challenges into actionable insights.</p>
+            <p class="hero-subtitle">BS in Business Analytics & Information Management with a Finance Minor[cite: 20]. Combining quantitative rigor, Python/SQL technical stacks, and corporate finance expertise[cite: 17, 20].</p>
             <div class="btn-group">
-                <a href="#experience" class="btn btn-primary">Explore Portfolio</a>
-                <a href="mailto:ferna267@purdue.edu" class="btn btn-outline">Get in Touch</a>
+                <a href="#experience" class="btn btn-primary">Explore Experience</a>
+                <a href="#cover-letter" class="btn btn-outline">View Cover Letter Hub</a>
             </div>
         </div>
     </header>
@@ -341,11 +361,11 @@
         <!-- About Section -->
         <section id="about">
             <h2 class="section-title">About Me</h2>
-            <p class="section-desc">Get to know my academic foundation, analytical stack, and core philosophy.</p>
+            <p class="section-desc">My academic foundation at Purdue's Mitch Daniels School of Business and core technical capabilities.</p>
             <div class="grid-2">
                 <div class="card">
                     <h3><i class="fa-solid fa-graduation-cap" style="color:var(--accent); margin-right:10px;"></i> Academic Background</h3>
-                    <p>I am a Senior at Purdue University’s Mitch Daniels School of Business pursuing a Bachelor of Science in Business Analytics and Information Management, complemented by a Minor in Finance and a Certificate in Applications in Data Science[cite: 16]. My coursework spans database management, operations management, corporate finance, and quantitative predictive modeling.</p>
+                    <p>Senior at Purdue University's Mitch Daniels School of Business pursuing a BS in Business Analytics and Information Management, complemented by a Minor in Finance and a Certificate in Applications in Data Science[cite: 20]. Coursework spans corporate finance, financial data modeling, database management, and operations management[cite: 16, 19, 20].</p>
                     <div class="tag-list">
                         <span class="tag">Business Analytics</span>
                         <span class="tag">Corporate Finance</span>
@@ -355,7 +375,7 @@
                 </div>
                 <div class="card">
                     <h3><i class="fa-solid fa-laptop-code" style="color:var(--coral); margin-right:10px;"></i> Technical Stack</h3>
-                    <p>Equipped with industry-standard analytical tools and certified through the Google Data Analytics Professional Certificate[cite: 13], I design robust data pipelines, build relational schemas in BigQuery, and deliver executive dashboards.</p>
+                    <p>Certified through the Google Data Analytics Professional Certificate[cite: 17, 18], with hands-on expertise in relational database architecture, exploratory predictive modeling, and executive visualization dashboards.</p>
                     <div class="tag-list">
                         <span class="tag">Python (pandas, scikit-learn)</span>
                         <span class="tag">R & RStudio</span>
@@ -370,12 +390,12 @@
         <!-- Experience Section -->
         <section id="experience">
             <h2 class="section-title">Professional Experience</h2>
-            <p class="section-desc">Applying quantitative rigor across fintech, software analytics, and hospitality strategy.</p>
+            <p class="section-desc">Applying quantitative modeling and data-driven strategy across fintech and corporate settings.</p>
             <div class="grid-2">
                 <div class="card">
                     <span class="meta">June 2026 – Aug 2026 | Remote (Chicago, IL)</span>
                     <h3>Financial Analyst Intern • MSPbots.ai</h3>
-                    <p>Processed QuickBooks financial data in Excel to analyze 2025–2026 software spending and cost drivers[cite: 16]. Assessed inter-departmental cost variances and deployed interactive Power BI dashboards to guide executive decision-making[cite: 16].</p>
+                    <p>Prepared QuickBooks financial data in Excel for software-expense analysis[cite: 17]. Evaluated 2025–2026 corporate spending trends and cost drivers, deploying interactive Power BI dashboards to guide executive decision-making[cite: 17].</p>
                     <div class="tag-list">
                         <span class="tag">Financial Modeling</span>
                         <span class="tag">Power BI</span>
@@ -386,7 +406,7 @@
                 <div class="card">
                     <span class="meta">June 2025 – July 2025 | West Lafayette, IN</span>
                     <h3>Student Business Strategist • Daniels School Externship</h3>
-                    <p>Analyzed school safety and visitor management systems using advanced Excel and AI tools to evaluate operational efficiency solutions[cite: 16], delivering rigorous cost-benefit analyses and professional reports[cite: 16].</p>
+                    <p>Analyzed school safety and visitor management systems utilizing advanced Excel analytics and AI tools to evaluate operational efficiency solutions, delivering cost-benefit reports[cite: 17, 20].</p>
                     <div class="tag-list">
                         <span class="tag">Process Optimization</span>
                         <span class="tag">Cost-Benefit Analysis</span>
@@ -396,7 +416,7 @@
                 <div class="card">
                     <span class="meta">May 2024 – July 2024 | Kodaikanal, India</span>
                     <h3>Business Analyst Intern • The Carlton</h3>
-                    <p>Conducted real-time market analysis to formulate customer acquisition strategies in Excel[cite: 16]. Designed and deployed Power BI dashboards to monitor performance trends and key operational KPIs[cite: 16].</p>
+                    <p>Conducted real-time market analysis and synthesized business data to formulate customer acquisition strategies in Excel, deploying Power BI dashboards for operational KPI tracking[cite: 17, 20].</p>
                     <div class="tag-list">
                         <span class="tag">Market Strategy</span>
                         <span class="tag">Excel Analytics</span>
@@ -406,7 +426,7 @@
                 <div class="card">
                     <span class="meta">August 2024 – Present | Purdue University</span>
                     <h3>Business Analyst • Consult Your Community</h3>
-                    <p>Executed compensation analysis for Antique Candle Co. (60+ employees) using Power BI compensation trends, and enhanced client satisfaction for Homestead Resources through structured surveys and Excel feedback analysis[cite: 16].</p>
+                    <p>Executed compensation analysis and market research for Antique Candle Co. (60+ employees) using Power BI trends, and enhanced client satisfaction for Homestead Resources through structured surveys and Excel feedback analysis[cite: 17, 20].</p>
                     <div class="tag-list">
                         <span class="tag">Compensation Analytics</span>
                         <span class="tag">Client Consulting</span>
@@ -416,48 +436,111 @@
             </div>
         </section>
 
-        <!-- Leadership & Service Section -->
+        <!-- Leadership Section -->
         <section id="leadership">
-            <h2 class="section-title">Leadership & Community Service</h2>
-            <p class="section-desc">Driving campus community engagement and sustainable grassroots impact.</p>
+            <h2 class="section-title">Leadership & Community Impact</h2>
+            <p class="section-desc">Driving campus community engagement and cross-functional collaboration.</p>
             <div class="grid-3">
                 <div class="card">
                     <span class="meta">Vice President</span>
                     <h3>Cross-Cultural Association</h3>
-                    <p>Directed 4+ campus events engaging 700+ students in multicultural programs[cite: 16]. Spearheaded grant procurement and budget justifications, successfully securing $30,000+ in funding[cite: 16].</p>
+                    <p>Directed 4+ campus events engaging 700+ students in multicultural programs[cite: 17, 20]. Spearheaded grant procurement and budget justifications, successfully securing over $30,000 in funding[cite: 17, 20].</p>
                 </div>
                 <div class="card">
                     <span class="meta">Team Leader</span>
                     <h3>Smokeless Stove Project (India)</h3>
-                    <p>Mobilized resources and directed fundraising to introduce cost-effective, eco-friendly smokeless stoves to 45 rural BPL households, improving indoor air quality for 90+ individuals[cite: 13].</p>
+                    <p>Mobilized resources and directed fundraising to introduce cost-effective, eco-friendly smokeless stoves to 45 rural BPL households, improving indoor air quality for 90+ individuals[cite: 13, 17].</p>
                 </div>
                 <div class="card">
-                    <span class="meta">Community Service</span>
-                    <h3>NHS & Environmental Initiatives</h3>
-                    <p>Built Looker Studio dashboards to track school carbon footprints[cite: 13], led Miyawaki forest planting initiatives, and coordinated bird-feeder installation projects through the National Honor Society.</p>
+                    <span class="meta">Member</span>
+                    <h3>Larsen Leaders Academy</h3>
+                    <p>Selected for a competitive leadership development cohort emphasizing professional problem-solving, executive communication, and strategic business leadership[cite: 17, 20].</p>
                 </div>
             </div>
         </section>
 
-        <!-- Interests & Passions -->
-        <section id="interests">
-            <h2 class="section-title">Beyond the Spreadsheet</h2>
-            <p class="section-desc">A snapshot of my personal pursuits, creativity, and love for exploration.</p>
-            <div class="grid-3">
-                <div class="interest-card">
-                    <div class="interest-icon"><i class="fa-solid fa-mountain"></i></div>
-                    <h3>Hiking & Adventure</h3>
-                    <p>Passionate about exploring mountain trails, conquering peaks, and embracing outdoor expeditions.</p>
+        <!-- Cover Letter Hub Section -->
+        <section id="cover-letter">
+            <h2 class="section-title">Master Cover Letter Hub</h2>
+            <p class="section-desc">A versatile, adaptable professional cover letter template highlighting my analytical stack and financial expertise.</p>
+            
+            <div class="card" style="border: 1px solid #CBD5E1;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <span class="meta" style="margin-bottom: 0.2rem;">Ready-to-Adapt Template</span>
+                        <h3 style="margin-bottom: 0;">Standard Professional Cover Letter</h3>
+                    </div>
+                    <button onclick="copyText('coverLetterText', 'copyCoverBtn')" id="copyCoverBtn" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">
+                        <i class="fa-regular fa-copy" style="margin-right: 6px;"></i> Copy Cover Letter
+                    </button>
                 </div>
-                <div class="interest-card">
-                    <div class="interest-icon"><i class="fa-solid fa-water"></i></div>
-                    <h3>Scuba & Snorkeling</h3>
-                    <p>Enthusiastic scuba diver exploring marine ecosystems and underwater biodiversity across coastal destinations.</p>
+
+                <div class="doc-box" id="coverLetterText">Aalia Fernandes
+Purdue University, West Lafayette, IN 47906 | 765-543-8769 | ferna267@purdue.edu | www.linkedin.com/in/aaliafernandes
+
+[Date]
+
+[Hiring Manager Name or "Hiring Team"]
+[Company Name]
+[Company Address]
+
+Dear [Hiring Manager Name or "Hiring Team"],
+
+I hope this letter finds you well and that you are having a productive week.
+
+As a Senior at Purdue University's Mitch Daniels School of Business—ranked #1 in North America for Management Information Systems[cite: 16]—pursuing a Bachelor of Science in Business Analytics and Information Management with a Minor in Finance[cite: 20], I am thrilled to apply for the [Insert Exact Job Title] position at [Company Name]. [Company Name]’s commitment to innovation and excellence makes it an inspiring organization where I hope to build my career.
+
+My academic training at Purdue has equipped me with a rigorous quantitative and technical foundation, blending advanced corporate finance, financial data modeling, and business analytics. This foundation is directly complemented by hands-on professional experience in financial analysis, reporting, and dashboard development. During my recent internship as a Financial Analyst Intern at MSPbots.ai, I prepared and processed QuickBooks financial data in Excel, executed software-expense and cost-driver analyses for corporate spending, and deployed interactive Power BI dashboards to translate complex financial metrics into actionable insights for leadership[cite: 17]. Furthermore, through my pro-bono consulting work with Consult Your Community for clients like Antique Candle Co. and Homestead Resources, I conducted structured requirements gathering, analyzed financial data, and delivered data-backed recommendations using Excel and Power BI[cite: 17].
+
+Beyond my technical stack, which spans SQL, Python, R, advanced Excel, and Power BI[cite: 17], I firmly believe my greatest asset is my passion for people and collaborative teamwork. Whether serving as Vice President of Purdue's Cross-Cultural Association, where I directed campus events for over 700 students, managed complex budgets, and secured over $30,000 in grants[cite: 17, 20], or collaborating with cross-functional stakeholders during my summer externships, I have always prioritized active listening, empathetic communication, and supporting my colleagues to achieve shared goals.
+
+I am eager to bring my analytical capabilities, meticulous attention to detail, and collaborative enthusiasm to [Company Name]’s team. Thank you very much for your time, consideration, and evaluation of my application.
+
+Warm regards,
+
+Aalia Fernandes</div>
+            </div>
+        </section>
+
+        <!-- LinkedIn Outreach Hub Section -->
+        <section id="outreach">
+            <h2 class="section-title">LinkedIn Networking Outreach Hub</h2>
+            <p class="section-desc">Targeted networking scripts and outreach messages designed to pair with your cover letter when connecting with recruiters and hiring managers.</p>
+            
+            <div class="grid-2">
+                <!-- Template 1 -->
+                <div class="card" style="border: 1px solid #CBD5E1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span class="meta" style="margin-bottom: 0;">Connection Request Note (Under 300 Chars)</span>
+                            <button onclick="copyText('outreach1Text', 'copyOutreach1Btn')" id="copyOutreach1Btn" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.75rem;">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <div class="doc-box" id="outreach1Text" style="max-height: 180px;">Hi [Recruiter Name], I'm a Senior at Purdue's Mitch Daniels School of Business studying Business Analytics & Finance[cite: 20]. I greatly admire [Company Name]'s work in [mention area, e.g., fintech/analytics] and would love to connect to discuss upcoming opportunities! Best, Aalia</div>
+                    </div>
                 </div>
-                <div class="interest-card">
-                    <div class="interest-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <h3>Coding & Reading</h3>
-                    <p>Constantly sharpening technical skills through 12-week coding competitions, Python challenges, and continuous reading.</p>
+
+                <!-- Template 2 -->
+                <div class="card" style="border: 1px solid #CBD5E1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span class="meta" style="margin-bottom: 0;">Follow-up Message (Upon Acceptance)</span>
+                            <button onclick="copyText('outreach2Text', 'copyOutreach2Btn')" id="copyOutreach2Btn" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.75rem;">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <div class="doc-box" id="outreach2Text" style="max-height: 180px;">Hi [Recruiter Name],
+
+Thank you for connecting! 
+
+With my background in Business Analytics & Finance from Purdue University[cite: 20]—reinforced by hands-on financial analysis and Power BI dashboarding experience during my internship at MSPbots.ai[cite: 17]—I am very interested in the [Insert Job Title] role at [Company Name]. 
+
+Would you be open to a brief 10-minute chat about the team's current focus and what you look for in candidates? I have attached my resume and cover letter here for your reference.
+
+Best regards,
+Aalia Fernandes</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -475,6 +558,28 @@
         <p>Email: ferna267@purdue.edu | Phone: 765-543-8769 | West Lafayette, IN</p>
         <p>&copy; 2026 Aalia Fernandes. Built with passion for data and impact.</p>
     </footer>
+
+    <!-- Copy Script -->
+    <script>
+        function copyText(elementId, buttonId) {
+            const textElement = document.getElementById(elementId);
+            const btn = document.getElementById(buttonId);
+            
+            navigator.clipboard.writeText(textElement.innerText).then(() => {
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-check" style="margin-right: 4px;"></i> Copied!';
+                btn.style.background = '#16A34A';
+                btn.style.color = '#FFFFFF';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 2500);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
 
 </body>
 </html>
